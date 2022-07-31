@@ -1,0 +1,34 @@
+.search-container {
+    width: 120px;
+    height: 70%;
+    position: relative;
+  }
+  .search-icon {
+    font-size: 15px;
+    position: absolute;
+    bottom: 8px;
+    left: calc(120px - 22px);
+    cursor: pointer;
+  }
+  .search-input {
+    outline: none;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    padding-right: 26px;
+  }
+  @media only screen and (max-width: 425px) {
+    .search-container {
+      width: 70px;
+    }
+    .search-icon {
+      left: calc(70px - 20px);
+      font-size: 13px;
+    }
+    .search-input {
+      font-size: 13px;
+      padding-right: 15px;
+    }
+  }
+  

@@ -1,0 +1,37 @@
+.list-container {
+    height: calc(100% - 140px);
+    overflow-y: scroll;
+    background-color: #e0e2e0;
+    padding: 25px 40px;
+  }
+  .list-titles-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    height: 60px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+  }
+  .list-message {
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 425px) {
+    .list-container {
+      padding: 25px 15px;
+    }
+    .list-titles-container {
+      font-size: 13px;
+    }
+  }
+  
+  @media only screen and (min-width: 1440px) {
+    .list-container {
+      padding: 25px 100px;
+    }
+    .list-titles-container {
+      font-size: 20px;
+    }
+  }
+  

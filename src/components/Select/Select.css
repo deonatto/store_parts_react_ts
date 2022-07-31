@@ -1,0 +1,16 @@
+select {
+    -webkit-appearance: none;
+    outline: none;
+    text-align: center;
+    margin-left: 20px;
+    width: 120px;
+    height: 70%;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 425px) {
+    select {
+      width: 70px;
+      font-size: 13px;
+    }
+  }
