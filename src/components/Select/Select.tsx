@@ -1,8 +1,26 @@
-import React from 'react'
+import React from "react";
+import "./Select.css";
 
-const Select: React.FC = () => {
+interface SelectProps{
+  data: string[]| null,
+  typeHandler: (val: string) => void,
+  defaultLabel: string
+}
+
+const Select: React.FC<SelectProps> = ({data, typeHandler, defaultLabel}) => {
   return (
-    <div>Select</div>
+    <select
+      onChange={(event) => typeHandler(event.target.value)}
+      defaultValue={defaultLabel}
+    >
+      <option value={defaultLabel}>{defaultLabel}</option>
+      {data &&
+        data.map((element, index) => (
+          <option value={element} key={index}>
+            {element}
+          </option>
+        ))}
+    </select>
   )
 }
 

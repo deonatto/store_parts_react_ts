@@ -1,0 +1,23 @@
+.sort-btn-container {
+    width: 120px;
+    height: 70%;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  .sort-btn-container p {
+    margin-right: 4px;
+    font-size: 18px;
+  }
+  @media only screen and (max-width: 425px) {
+    .sort-btn-container {
+      width: 70px;
+    }
+    .sort-btn-container p {
+      font-size: 13px;
+    }
+  }
